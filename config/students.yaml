@@ -1,0 +1,12 @@
+# Mapeia CodigoAluno -> login GitHub e nome (opcional)
+# Edite conforme necessário.
+mappings:
+  "19041507":
+    login: "19041507"        # Daniel Augusto (se o login real no GitHub for outro, ajuste aqui)
+    nome: "Daniel Augusto"
+  "Bluh7":
+    login: "Bluh7"           # Gabriel Perazzo
+    nome: "Gabriel Perazzo"
+# Observações:
+# - Se o CSV trouxer CodigoAluno como '19041507' e você quiser atribuir ao login '19041507', mantenha assim.
+# - Se o CodigoAluno vier como nome/sigla, inclua a chave exata aqui e defina 'login' para o GitHub correspondente.
