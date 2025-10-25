@@ -10,10 +10,10 @@
   <main class="container">
     <h1>Cadastro de Cliente - Autopeças</h1>
     <form id="cadastroForm">
-      <label>Nome <input type="text" name="nome" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Telefone <input type="tel" name="telefone" required></label>
-      <label>Placa do Veículo <input type="text" name="placa" required></label>
+      <label>Nome <input type="text" name="nome" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" minlength="3" maxlength="255" required></label>
+      <label>Email <input type="email" name="email" minlength="7" maxlength="254" required></label>
+      <label>Telefone <input type="tel" inputmode="tel" name="telefone" pattern="^\+?\d{8,15}$" minlength="8" maxlength="15" required></label>
+      <label>Placa do Veículo <input type="text" name="placa" pattern="^[A-Z]{3}\d{4}$|^[A-Z]{3}\d[A-Z]\d{2}$" minlength="7" maxlength="8" required></label>
       <div class="actions">
         <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
